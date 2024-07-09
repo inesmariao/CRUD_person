@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import { Person } from './Person';
 
-export const People = ({ persons, setPersons }) => {
+export const People = ({ persons }) => {
+
+
   return (
     <div>
       <h2>IT Team</h2>
@@ -21,20 +23,20 @@ export const People = ({ persons, setPersons }) => {
           })}
         </div>
       </div>
-      {/* Renderiz el formulario para crear o editar los datos de una persona */}
+      {/* Renderizar el formulario para crear o editar los datos de una persona */}
       <div className='container mt-4 row p-2'>
         <h2>Crear nuevo empleado</h2>
-      <form>
-        <div className="mb-3">
-          <label className="form-label">Nombres</label>
-          <input type="text" className="form-control" aria-describedby="nombre" />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Cargo</label>
-          <input type="text" className="form-control" />
-        </div>
-        <button type="submit" className="btn btn-primary">Crear</button>
-      </form>
+        <form>
+          <div className="mb-3">
+            <label className="form-label">Nombres</label>
+            <input type="text" className="form-control" aria-describedby="nombre" />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Cargo</label>
+            <input type="text" className="form-control" />
+          </div>
+          <button type="submit" className="btn btn-primary">Crear</button>
+        </form>
       </div>
     </div>
   )
